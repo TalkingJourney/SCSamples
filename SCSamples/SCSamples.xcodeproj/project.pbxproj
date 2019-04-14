@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B87AD29821DA546D006FE337 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B87AD29721DA546D006FE337 /* AppDelegate.m */; };
+		67FD3FCE796712F4186B91B4 /* libPods-SCSamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9050A3F088CCB3C1207A685 /* libPods-SCSamples.a */; };
 		B87AD29B21DA546D006FE337 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87AD29A21DA546D006FE337 /* ViewController.m */; };
 		B87AD29E21DA546D006FE337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87AD29C21DA546D006FE337 /* Main.storyboard */; };
 		B87AD2A021DA5470006FE337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87AD29F21DA5470006FE337 /* Assets.xcassets */; };
 		B87AD2A321DA5470006FE337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87AD2A121DA5470006FE337 /* LaunchScreen.storyboard */; };
 		B87AD2A621DA5470006FE337 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B87AD2A521DA5470006FE337 /* main.m */; };
 		B87AD2AE21DA57B6006FE337 /* SCReusePool.m in Sources */ = {isa = PBXBuildFile; fileRef = B87AD2AD21DA57B6006FE337 /* SCReusePool.m */; };
+		B88578D42262D8D4008EF8C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B87AD29721DA546D006FE337 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BB1F1141D8EC0E906287C69 /* Pods-SCSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCSamples.release.xcconfig"; path = "Target Support Files/Pods-SCSamples/Pods-SCSamples.release.xcconfig"; sourceTree = "<group>"; };
 		B87AD29321DA546D006FE337 /* SCSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87AD29621DA546D006FE337 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B87AD29721DA546D006FE337 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		B87AD2A521DA5470006FE337 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B87AD2AC21DA57B6006FE337 /* SCReusePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCReusePool.h; sourceTree = "<group>"; };
 		B87AD2AD21DA57B6006FE337 /* SCReusePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCReusePool.m; sourceTree = "<group>"; };
+		D77BF12270F49992DE3D66B0 /* Pods-SCSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCSamples.debug.xcconfig"; path = "Target Support Files/Pods-SCSamples/Pods-SCSamples.debug.xcconfig"; sourceTree = "<group>"; };
+		E9050A3F088CCB3C1207A685 /* libPods-SCSamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCSamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67FD3FCE796712F4186B91B4 /* libPods-SCSamples.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				B87AD29521DA546D006FE337 /* SCSamples */,
 				B87AD29421DA546D006FE337 /* Products */,
+				FA53EC6A9C03727EBDF16AAB /* Pods */,
+				E6E40775F83CA12BF30628A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +68,44 @@
 		B87AD29521DA546D006FE337 /* SCSamples */ = {
 			isa = PBXGroup;
 			children = (
-				B87AD29621DA546D006FE337 /* AppDelegate.h */,
-				B87AD29721DA546D006FE337 /* AppDelegate.m */,
+				B88578D32262D86C008EF8C9 /* App */,
 				B87AD29921DA546D006FE337 /* ViewController.h */,
 				B87AD29A21DA546D006FE337 /* ViewController.m */,
 				B87AD2AC21DA57B6006FE337 /* SCReusePool.h */,
 				B87AD2AD21DA57B6006FE337 /* SCReusePool.m */,
+			);
+			path = SCSamples;
+			sourceTree = "<group>";
+		};
+		B88578D32262D86C008EF8C9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B87AD29621DA546D006FE337 /* AppDelegate.h */,
+				B87AD29721DA546D006FE337 /* AppDelegate.m */,
 				B87AD29C21DA546D006FE337 /* Main.storyboard */,
 				B87AD29F21DA5470006FE337 /* Assets.xcassets */,
 				B87AD2A121DA5470006FE337 /* LaunchScreen.storyboard */,
 				B87AD2A421DA5470006FE337 /* Info.plist */,
 				B87AD2A521DA5470006FE337 /* main.m */,
 			);
-			path = SCSamples;
+			path = App;
+			sourceTree = "<group>";
+		};
+		E6E40775F83CA12BF30628A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9050A3F088CCB3C1207A685 /* libPods-SCSamples.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA53EC6A9C03727EBDF16AAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D77BF12270F49992DE3D66B0 /* Pods-SCSamples.debug.xcconfig */,
+				1BB1F1141D8EC0E906287C69 /* Pods-SCSamples.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B87AD2A921DA5470006FE337 /* Build configuration list for PBXNativeTarget "SCSamples" */;
 			buildPhases = (
+				38492D7C739DD5CC6B1BB6DC /* [CP] Check Pods Manifest.lock */,
 				B87AD28F21DA546D006FE337 /* Sources */,
 				B87AD29021DA546D006FE337 /* Frameworks */,
 				B87AD29121DA546D006FE337 /* Resources */,
@@ -141,15 +174,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38492D7C739DD5CC6B1BB6DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCSamples-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B87AD28F21DA546D006FE337 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88578D42262D8D4008EF8C9 /* AppDelegate.m in Sources */,
 				B87AD2AE21DA57B6006FE337 /* SCReusePool.m in Sources */,
 				B87AD29B21DA546D006FE337 /* ViewController.m in Sources */,
 				B87AD2A621DA5470006FE337 /* main.m in Sources */,
-				B87AD29821DA546D006FE337 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +347,12 @@
 		};
 		B87AD2AA21DA5470006FE337 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77BF12270F49992DE3D66B0 /* Pods-SCSamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VLK8JB9DN;
-				INFOPLIST_FILE = SCSamples/Info.plist;
+				INFOPLIST_FILE = SCSamples/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,11 +365,12 @@
 		};
 		B87AD2AB21DA5470006FE337 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB1F1141D8EC0E906287C69 /* Pods-SCSamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VLK8JB9DN;
-				INFOPLIST_FILE = SCSamples/Info.plist;
+				INFOPLIST_FILE = SCSamples/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
